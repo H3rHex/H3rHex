@@ -1,15 +1,7 @@
-var xhr = new XMLHttpRequest();
-xhr.open('GET', '/js/handleProjects/projects.json', true);
-xhr.onload = function() {
-  if (xhr.status === 200) {
-    var data = JSON.parse(xhr.responseText);
-    createStructure(data);
-  } else {
-    console.error('Error cargando datos:', xhr.statusText);
-  }
-};
-xhr.send();
-
+fetch('/js/handleProjects/projects.json')
+  .then(response => response.json())
+  .then(data => createStructure(data))
+  .catch(error => console.error('Error cargando datos:', error));
 
 function createStructure(projectData){
     const projectContainerDiv = document.querySelector('.projectContainer')
