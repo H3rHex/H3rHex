@@ -1,4 +1,4 @@
-fetch('/js/handleProjects/projects.json')
+fetch('../js/handleProjects/projects.json')
   .then(response => response.json())
   .then(data => createStructure(data))
   .catch(error => console.error('Error cargando datos:', error));
