@@ -22,8 +22,7 @@ Mis estudios en sistemas microinformáticos y redes me han proporcionado una só
 - HTML/CSS
 
 ### GITHUB STADISTICS 
-<img src="https://camo.githubusercontent.com/37d758359a1f778711e5914c044df1044f4ebcd34cfc2f16220dd84912929bfe/68747470733a2f2f6769746875622d726561646d652d73746174732e76657263656c2e6170702f6170693f757365726e616d653d6d72346834267469746c655f636f6c6f723d66666666666626746578745f636f6c6f723d6666666666662662675f636f6c6f723d30643131313726626f726465725f636f6c6f723d6666666666662669636f6e5f636f6c6f723d666630303563" data-canonical-src="https://github-readme-stats.vercel.app/api?username=h3rhex&amp;title_color=ffffff&amp;text_color=ffffff&amp;bg_color=0d1117&amp;border_color=ffffff&amp;icon_color=ff005c" style="max-width: 100%;">
-
+ <img src="https://github-readme-stats.vercel.app/api?username=h3rhex&title_color=ffffff&text_color=ffffff&bg_color=0d1117&border_color=#9400D3&icon_color=ff005c"/>
 ### Core Interests / Áreas de Interés
 - Web Development / Desarrollo Web
 - Software Development / Desarrollo de Software
