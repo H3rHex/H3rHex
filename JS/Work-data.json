@@ -1,0 +1,23 @@
+{
+    "Proyect1":{
+        "Tittle": "Image Ascier",
+        "Body": "This script converts an image to ASCII art using characters. It is a simple tool that allows users to input an image and generate a text representation of it using ASCII characters.",
+        "Img": "ImageAscier.webp",
+        "LinkGit": "https://github.com/H3rHex/ImageAscier",
+        "LinkWeb":""
+    },
+    "Proyect2":{
+        "Tittle": "PickPixelColor.py",
+        "Body": "Color Picker is an application that allows you to select the color of a pixel on the screen and copy its hexadecimal value to the clipboard.",
+        "Img": "ColorPicker.webp",
+        "LinkGit": "https://github.com/H3rHex/PickPixelColor-py",
+        "LinkWeb":""
+    },
+    "Proyect3":{
+        "Tittle": "Tic Tac Toe",
+        "Body": "A simple implementation of the classic Tic Tac Toe game. Play against a friend or the computer directly in your browser!",
+        "Img": "TicTacToe.webp",
+        "LinkGit": "https://github.com/H3rHex/tic-tac-toe",
+        "LinkWeb":"https://h3rhex.github.io/tic-tac-toe/"
+    }
+}
