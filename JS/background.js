@@ -14,23 +14,38 @@ function updateCanvasSize() {
     if (document.body.scrollHeight < window.innerHeight) {
         canvas.height = window.innerHeight;
     }
+
+    
 }
 
-// Llama a la función para ajustar el tamaño inicial
 updateCanvasSize();
-
-// Actualiza el tamaño del canvas cuando la ventana cambia de tamaño
-window.addEventListener('resize', updateCanvasSize);
 
 // Configuración de partículas
 const particlesArray = []; // Array para almacenar partículas
-const numParticles = 400; // Número de partículas
+const numParticles = particleNumber(); // Número de partículas
+
+function particleNumber(){
+    const size = window.innerWidth; // Obtener el ancho de la ventana
+    
+        switch (true) {
+            case size > 800:
+                return 350; // Velocidad para pantallas grandes
+            case size > 600:
+                return 200; // Velocidad para pantallas medianas
+            case size > 400:
+                return 125; // Velocidad para pantallas pequeñas
+            default:
+                return 50; // Velocidad para pantallas muy pequeñas
+        }
+}
 
 class Particle {
+
     constructor() {
         this.x = Math.random() * canvas.width;
         this.y = Math.random() * canvas.height;
         this.size = Math.random() * 1 + 1;
+
         this.speedX = (Math.random() * 1) - 0.5;  // Aumentar el rango de movimiento en el eje X
         this.speedY = (Math.random() * 1) - 0.5;  // Aumentar el rango de movimiento en el eje Y
 
@@ -70,6 +85,10 @@ class Particle {
         ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
         ctx.closePath();
         ctx.fill();
+    }
+
+    clear(){
+        ctx.clear();
     }
 }
 

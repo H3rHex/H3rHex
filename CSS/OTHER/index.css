@@ -67,7 +67,15 @@
 }
 
 
+@media (max-width:480px) {
+    #writeText{
+        display: none;
+    }
 
+    #presentationBody h2{
+        color: white;
+        font-size: 10px;
+    }
 
-
+}
 
