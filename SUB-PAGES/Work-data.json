@@ -19,5 +19,12 @@
         "Img": "TicTacToe.webp",
         "LinkGit": "https://github.com/H3rHex/tic-tac-toe",
         "LinkWeb":"https://h3rhex.github.io/tic-tac-toe/"
+    },
+    "Proyect4":{
+        "Tittle": "h3rcode (h3rc)",
+        "Body": "h3rcode (h3rc) is a simplified dialect of C that replaces standard C keywords with custom ones. The compiler converts .h3rc files into standard C code, which can then be compiled and executed with a C compiler like GCC",
+        "Img": "h3rcode.webp",
+        "LinkGit": "https://github.com/H3rHex/h3r-code",
+        "LinkWeb":""
     }
 }
