@@ -16,6 +16,7 @@ Mis estudios en sistemas microinformáticos y redes me han proporcionado una só
 
 ### Programming & Scripting Languages / Lenguajes de Programación y Scripts
 - Python
+- C
 - Bash
 - GDScript (GODOT)
 - JavaScript
