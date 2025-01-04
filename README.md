@@ -22,6 +22,7 @@ Mis estudios en sistemas microinformáticos y redes me han proporcionado una só
 - HTML/CSS
 
 ### GITHUB STADISTICS 
+ <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=h3rhex&layout=compact&langs_count=10&title_color=ffffff&text_color=ffffff&bg_color=0d1117&border_color=9400D3&icon_color=ff005c"/>
  <img src="https://github-readme-stats.vercel.app/api?username=h3rhex&title_color=ffffff&text_color=ffffff&bg_color=0d1117&border_color=#9400D3&icon_color=ff005c"/>
 ### Core Interests / Áreas de Interés
 - Web Development / Desarrollo Web
