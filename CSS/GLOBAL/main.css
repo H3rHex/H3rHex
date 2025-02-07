@@ -134,7 +134,7 @@ header .container {
   align-items: center;
 
   width: 60%;
-  padding: 20px;
+  padding: 25px;
   border-radius: 20px;
   margin: 0 auto;
   height: 10vh;
@@ -148,7 +148,7 @@ header .container {
 
 header h3 {
   font-family: "POSTERABLE";
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: var(--color-ligth-purple);
   text-shadow: 3px 2px 2px black;
 
@@ -176,7 +176,7 @@ header .left {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
 }
 
 header .center {

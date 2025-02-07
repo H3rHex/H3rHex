@@ -66,6 +66,10 @@
     font-size: 1.2rem;
 }
 
+.github-stats{
+    width: 50%;
+    height: 50%;
+}
 
 @media (max-width:480px) {
     #writeText{
@@ -75,6 +79,28 @@
     #presentationBody h2{
         color: white;
         font-size: 10px;
+    }
+
+    .github-stats{
+        width: 80%;
+        height: 80%;
+    }
+
+}
+
+@media (max-width:480px) {
+    #writeText{
+        display: none;
+    }
+
+    #presentationBody h2{
+        color: white;
+        font-size: 10px;
+    }
+
+    .github-stats{
+        width: 100%;
+        height: 100%;
     }
 
 }
