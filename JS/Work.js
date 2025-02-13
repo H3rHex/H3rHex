@@ -26,6 +26,7 @@ function loadWork(data) {
         workImage.classList.add('workImage');
         workImage.src = `../ASSETS/OTHER/PROJECT-MEDIA/${data[d]['Img']}`;
         workSection.appendChild(workImage);
+        workImage.setAttribute("loading", "lazy")
 
         let workDescription = document.createElement('p');
         workDescription.classList.add('workDescription');

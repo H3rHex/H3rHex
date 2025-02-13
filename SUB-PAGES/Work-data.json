@@ -26,5 +26,12 @@
         "Img": "h3rcode.webp",
         "LinkGit": "https://github.com/H3rHex/h3r-code",
         "LinkWeb":""
+    },
+    "Proyect5":{
+        "Tittle": "GenPass",
+        "Body": "A fast and secure password generator. Create strong passwords with letters, numbers, and symbols. 🔒",
+        "Img": "GenPass.png",
+        "LinkGit": "https://github.com/H3rHex/GenPass",
+        "LinkWeb":"https://h3rhex.github.io/GenPass/"
     }
 }
