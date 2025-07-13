@@ -1,74 +1,122 @@
-function loadData() {
-    return fetch('./Work-data.json') // Asegúrate de que la ruta sea correcta
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
-            return response.json();
-        })
-        .catch(error => console.error('Error cargando datos:', error));
-}
+class proyect {
+    constructor(tittle, body, img, linkGit, linkWeb) {
+        this.tittle = tittle; // Title of the project
+        this.body = body; // Description of the project
+        this.img = img; // Image associated with the project
+        this.linkGit = linkGit; // GitHub link for the project
+        this.linkWeb = linkWeb; // Web link for the project (if any)
+    }
 
-function loadWork(data) {
-    const container = document.getElementById('workContainer');
-
-    for (d in data) {
+    createElement() {
+        // Create a section element for the project
         let workSection = document.createElement('section');
+        workSection.attributes.setNamedItem(document.createAttribute('project')); // Set an empty id attribute
+        workSection.setAttribute('project', this.tittle); // Set an empty project attribute
         workSection.classList.add('workSection');
-        container.appendChild(workSection);
 
+        // Create and append the title
         let workTitle = document.createElement('h3');
         workTitle.classList.add('workTitle');
-        workTitle.textContent = data[d]['Tittle'];
+        workTitle.textContent = this.tittle;
         workSection.appendChild(workTitle);
 
+        // Create and append the image
         let workImage = document.createElement('img');
         workImage.classList.add('workImage');
-        workImage.src = `../ASSETS/OTHER/PROJECT-MEDIA/${data[d]['Img']}`;
+        workImage.src = `../ASSETS/OTHER/PROJECT-MEDIA/${this.img}`;
+        workImage.setAttribute("loading", "lazy");
         workSection.appendChild(workImage);
-        workImage.setAttribute("loading", "lazy")
 
+        // Create and append the description
         let workDescription = document.createElement('p');
         workDescription.classList.add('workDescription');
-        workDescription.textContent = data[d]['Body'];
+        workDescription.textContent = this.body;
         workSection.appendChild(workDescription);
 
-        //LINKS
-        
+        // Create links container
         const linksContainers = document.createElement('div');
         linksContainers.classList.add('linksContainer');
         workSection.appendChild(linksContainers);
 
-
+        // Create and append GitHub link
         let gitLink = document.createElement('a');
         gitLink.classList.add('wLinks');
-        gitLink.href = data[d]['LinkGit'];
-        linksContainers.appendChild(gitLink);
+        gitLink.href = this.linkGit;
 
-        const gitIcon = document.createElement('svg');
+        //GIT ICON
+        const gitIcon = document.createElement('img');
         gitIcon.classList.add('wLinks');
-        gitIcon.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">viewBox=&quot;0 0 48 48&quot;<path fill="#000" fill-rule="evenodd" d="M24.02 0C10.737 0 0 11 0 24.608c0 10.878 6.88 20.086 16.424 23.345 1.193.245 1.63-.53 1.63-1.18 0-.571-.039-2.527-.039-4.564-6.682 1.467-8.073-2.934-8.073-2.934-1.074-2.852-2.665-3.585-2.665-3.585-2.187-1.507.16-1.507.16-1.507 2.425.163 3.698 2.526 3.698 2.526 2.147 3.748 5.607 2.689 7 2.037.198-1.59.834-2.69 1.51-3.3-5.329-.57-10.936-2.69-10.936-12.142 0-2.689.954-4.889 2.466-6.6-.239-.61-1.074-3.137.239-6.519 0 0 2.028-.652 6.6 2.526a23.094 23.485 0 0 1 6.006-.815c2.028 0 4.095.286 6.005.815 4.573-3.178 6.601-2.526 6.601-2.526 1.313 3.382.477 5.908.239 6.52 1.55 1.71 2.465 3.91 2.465 6.6 0 9.452-5.607 11.53-10.976 12.14.876.775 1.63 2.241 1.63 4.564 0 3.3-.039 5.948-.039 6.763 0 .652.438 1.426 1.63 1.182C41.12 44.694 48 35.486 48 24.608 48.04 11 37.262 0 24.02 0Z" clip-rule="evenodd" style="stroke-width:.495814"/></svg>`;
+        gitIcon.src = `../ASSETS/OTHER/SVG-ICONS/github-svgrepo-com.svg`;
         gitLink.appendChild(gitIcon);
+        linksContainers.appendChild(gitLink); // <--- AQUI SE AÑADE EL ENLACE DE GITHUB
 
-        if (data[d]['LinkWeb'] !== ''){
+        // Modificación en la condición y la asignación del icono web
+        if (this.linkWeb) { // Condición más robusta para comprobar si linkWeb tiene un valor
             let webLink = document.createElement('a');
             webLink.classList.add('wLinks');
-            webLink.href = data[d]['LinkWeb'];
-            linksContainers.appendChild(webLink);
-            
-            let webIcon = document.createElement('svg');
+            webLink.href = this.linkWeb;
+
+            let webIcon = document.createElement('img'); // Crear un NUEVO elemento img para el icono web
             webIcon.classList.add('wLinks');
-            webIcon.innerHTML = `<svg fill="#000000" width="48" height="48" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M10.962 15.867a2.469 2.469 0 0 1-.69 1.377l-1.029 1.028a2.5 2.5 0 0 1-3.536-3.536l1.029-1.029a2.464 2.464 0 0 1 1.423-.694l1.781-1.781a4.425 4.425 0 0 0-4.619 1.062l-1.028 1.028a4.5 4.5 0 0 0 6.364 6.364l1.029-1.029a4.489 4.489 0 0 0 1.073-4.587zM19.686 4.293a4.511 4.511 0 0 0-6.364 0l-1.029 1.029a4.49 4.49 0 0 0-1.063 4.62l1.779-1.779a2.476 2.476 0 0 1 .7-1.427l1.029-1.029a2.5 2.5 0 0 1 3.536 3.536l-1.029 1.029a2.484 2.484 0 0 1-1.379.693l-1.796 1.794a4.409 4.409 0 0 0 4.587-1.072l1.029-1.029a4.5 4.5 0 0 0 0-6.365z"></path> <path d="M9 16a1 1 0 0 1-.707-1.707l6-6a1 1 0 0 1 1.414 1.414l-6 6A1 1 0 0 1 9 16z"></path> </g></svg>`;
+            webIcon.src = `../ASSETS/OTHER/SVG-ICONS/browser-svgrepo-com.svg`; // Asignar la ruta al icono web
             webLink.appendChild(webIcon);
-        } else {
-            continue;
+
+            linksContainers.appendChild(webLink); // <--- AQUI SE AÑADE EL ENLACE WEB
         }
+        return workSection; // Return the created section element
     }
 }
 
-window.addEventListener("load", () => {
-    loadData().then(data => {
-        loadWork(data); // Crea la estructura HTML con los datos cargados
-    });
-});
+async function loadData() {
+    // Fetch the JSON data from the specified path
+    try {
+        const response = await fetch('../SUB-PAGES/Work-data.json');
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status} `);
+        }
+        const data = await response.json();
+        return data; // Return the parsed JSON data
+    } catch (error) {
+        console.error('Error fetching the JSON data:', error);
+        return {}; // Return an empty object in case of error
+    }
 
+
+}
+
+function loadWork(data) {
+    if (!data || Object.keys(data).length === 0) {
+        console.error('No data available to load work sections.');
+        return; // Exit if no data is available
+    }
+
+    try {
+        for (const key in data) {
+            if (data.hasOwnProperty(key)) {
+                const projectData = data[key];
+                const project = new proyect(
+                    projectData.Tittle, // Title of the project
+                    projectData.Body, // Description of the project or body text
+                    projectData.Img, // Image file name for the project
+                    projectData.LinkGit, // GitHub link for the project
+                    projectData.LinkWeb // Web link for the project (if any)
+                );
+                const projectsContainer = document.getElementById('projectsContainer'); // Get the container where projects will be displayed
+                if (projectsContainer) {
+                    const projectElement = project.createElement(); // Create the project element
+                    projectsContainer.appendChild(projectElement); // Append the project element to the container
+                }
+            }
+        }
+    } catch (error) {
+        console.error('Error loading work sections:', error);
+    }
+
+}
+
+// Initialize the work sections when the document is ready
+document.addEventListener('DOMContentLoaded', async () => {
+    const data = await loadData(); // Load the data from the JSON file
+    loadWork(data); // Load the work sections with the fetched data
+}
+);

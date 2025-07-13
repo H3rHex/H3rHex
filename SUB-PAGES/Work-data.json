@@ -1,37 +1,38 @@
 {
-    "Proyect1":{
+    "Proyect1": {
+        "Tittle": "GymTracker",
+        "Body": "Personal trainer app to track your workouts and progress. It allows you to create and manage your workout routines, whith a simple and intuitive interface. Using Java SpringBoot for the backend.",
+        "Img": "GymTracker.webp",
+        "LinkGit": "https://github.com/H3rHex/GymTracker",
+        "LinkWeb": ""
+    },
+    "Proyect2": {
         "Tittle": "Image Ascier",
         "Body": "This script converts an image to ASCII art using characters. It is a simple tool that allows users to input an image and generate a text representation of it using ASCII characters.",
         "Img": "ImageAscier.webp",
         "LinkGit": "https://github.com/H3rHex/ImageAscier",
-        "LinkWeb":""
+        "LinkWeb": ""
     },
-    "Proyect2":{
+    "Proyect3": {
         "Tittle": "PickPixelColor.py",
         "Body": "Color Picker is an application that allows you to select the color of a pixel on the screen and copy its hexadecimal value to the clipboard.",
         "Img": "ColorPicker.webp",
         "LinkGit": "https://github.com/H3rHex/PickPixelColor-py",
-        "LinkWeb":""
+        "LinkWeb": ""
     },
-    "Proyect3":{
-        "Tittle": "Tic Tac Toe",
-        "Body": "A simple implementation of the classic Tic Tac Toe game. Play against a friend or the computer directly in your browser!",
-        "Img": "TicTacToe.webp",
-        "LinkGit": "https://github.com/H3rHex/tic-tac-toe",
-        "LinkWeb":"https://h3rhex.github.io/tic-tac-toe/"
-    },
-    "Proyect4":{
+
+    "Proyect5": {
         "Tittle": "h3rcode (h3rc)",
         "Body": "h3rcode (h3rc) is a simplified dialect of C that replaces standard C keywords with custom ones. The compiler converts .h3rc files into standard C code, which can then be compiled and executed with a C compiler like GCC",
         "Img": "h3rcode.webp",
         "LinkGit": "https://github.com/H3rHex/h3r-code",
-        "LinkWeb":""
+        "LinkWeb": ""
     },
-    "Proyect5":{
+    "Proyect6": {
         "Tittle": "GenPass",
         "Body": "A fast and secure password generator. Create strong passwords with letters, numbers, and symbols. 🔒",
         "Img": "GenPass.png",
         "LinkGit": "https://github.com/H3rHex/GenPass",
-        "LinkWeb":"https://h3rhex.github.io/GenPass/"
+        "LinkWeb": "https://h3rhex.github.io/GenPass/"
     }
 }
