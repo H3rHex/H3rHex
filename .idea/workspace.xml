@@ -1,33 +1,112 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="34125f5d-f231-4f93-9413-8f3defd42191" name="Changes" comment="" />
+    <list default="true" id="34125f5d-f231-4f93-9413-8f3defd42191" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/source-code/public/locales/es.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source-code/src/components/common/Footer.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source-code/src/components/common/Header.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source-code/src/components/common/LanguageSelector.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source-code/src/components/common/text/TextP.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source-code/src/i18n.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/H3rHex.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASSETS/FONTS/Fragmentcore.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASSETS/FONTS/OldNewspaperTypes.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASSETS/FONTS/POSTERABLE.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASSETS/OTHER/CURSOR/Thumbs.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASSETS/OTHER/CURSOR/alternate.cur" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASSETS/OTHER/CURSOR/busy.cur" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASSETS/OTHER/CURSOR/diagonal resize 1.cur" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASSETS/OTHER/CURSOR/diagonal resize 2.cur" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASSETS/OTHER/CURSOR/handwriting.cur" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASSETS/OTHER/CURSOR/help.cur" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASSETS/OTHER/CURSOR/horizontal.cur" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASSETS/OTHER/CURSOR/link.cur" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASSETS/OTHER/CURSOR/move.cur" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASSETS/OTHER/CURSOR/normal.cur" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASSETS/OTHER/CURSOR/precision.cur" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASSETS/OTHER/CURSOR/text.cur" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASSETS/OTHER/CURSOR/unavailable.cur" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASSETS/OTHER/CURSOR/vertical.cur" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASSETS/OTHER/CURSOR/working.cur" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASSETS/OTHER/PROJECT-MEDIA/GenPass.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASSETS/OTHER/PROJECT-MEDIA/GymTracker.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASSETS/OTHER/PROJECT-MEDIA/ImageAscier.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASSETS/OTHER/PROJECT-MEDIA/MiniShell.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASSETS/OTHER/SVG-ICONS/browser-svgrepo-com.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASSETS/OTHER/SVG-ICONS/github-svgrepo-com.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASSETS/favicon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/GLOBAL/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/OTHER/Work.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/OTHER/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/Work.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/background.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/header.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SUB-PAGES/Work-data.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SUB-PAGES/Work.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/googlead71841d311f7b17.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sitemap.xml" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2sihWEttqEmfus0T9nwIFpnHhgL" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/h3rhex/Development/WebDev/H3rHex",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JavaScript Debug.index.html.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;v2&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/h3rhex/Development/WebDev/H3rHex&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.web.browsers&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/home/h3rhex/Development/WebDev/H3rHex/source-code/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/source-code/src" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/H3rHex/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.index.html" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
