@@ -5,54 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="34125f5d-f231-4f93-9413-8f3defd42191" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/source-code/public/locales/es.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source-code/src/components/common/Footer.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source-code/src/components/common/Header.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source-code/src/components/common/LanguageSelector.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source-code/src/components/common/text/TextP.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source-code/src/i18n.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/H3rHex.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASSETS/FONTS/Fragmentcore.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASSETS/FONTS/OldNewspaperTypes.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASSETS/FONTS/POSTERABLE.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASSETS/OTHER/CURSOR/Thumbs.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASSETS/OTHER/CURSOR/alternate.cur" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASSETS/OTHER/CURSOR/busy.cur" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASSETS/OTHER/CURSOR/diagonal resize 1.cur" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASSETS/OTHER/CURSOR/diagonal resize 2.cur" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASSETS/OTHER/CURSOR/handwriting.cur" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASSETS/OTHER/CURSOR/help.cur" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASSETS/OTHER/CURSOR/horizontal.cur" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASSETS/OTHER/CURSOR/link.cur" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASSETS/OTHER/CURSOR/move.cur" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASSETS/OTHER/CURSOR/normal.cur" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASSETS/OTHER/CURSOR/precision.cur" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASSETS/OTHER/CURSOR/text.cur" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASSETS/OTHER/CURSOR/unavailable.cur" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASSETS/OTHER/CURSOR/vertical.cur" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASSETS/OTHER/CURSOR/working.cur" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASSETS/OTHER/PROJECT-MEDIA/GenPass.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASSETS/OTHER/PROJECT-MEDIA/GymTracker.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASSETS/OTHER/PROJECT-MEDIA/ImageAscier.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASSETS/OTHER/PROJECT-MEDIA/MiniShell.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASSETS/OTHER/SVG-ICONS/browser-svgrepo-com.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASSETS/OTHER/SVG-ICONS/github-svgrepo-com.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASSETS/favicon.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSS/GLOBAL/main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSS/OTHER/Work.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSS/OTHER/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JS/Work.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JS/background.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JS/header.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SUB-PAGES/Work-data.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SUB-PAGES/Work.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/googlead71841d311f7b17.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sitemap.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/source-code/src/components/other/GitHubSvg.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source-code/src/components/other/ThemeSwitcher.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source-code/src/locales/en.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source-code/src/locales/es.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source-code/src/pages/Home.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source-code/src/pages/Projects.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-code/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/source-code/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-code/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/source-code/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-code/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/source-code/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-code/public/locales/en.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-code/public/locales/es.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-code/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/source-code/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-code/src/components/common/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/source-code/src/components/common/Footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-code/src/components/common/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/source-code/src/components/common/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-code/src/components/common/LanguageSelector.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/source-code/src/components/common/LanguageSelector.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-code/src/i18n.ts" beforeDir="false" afterPath="$PROJECT_DIR$/source-code/src/i18n.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-code/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/source-code/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-code/vite.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/source-code/vite.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,6 +41,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
 }</component>
@@ -78,31 +52,46 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;JavaScript Debug.index.html.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;v2&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/h3rhex/Development/WebDev/H3rHex&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.web.browsers&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/home/h3rhex/Development/WebDev/H3rHex/source-code/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JavaScript Debug.index.html.executor": "Run",
+    "JavaScript Debug.localhost:5173.executor": "Debug",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "v2",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "/h3rhex/Development/WebDev/H3rHex",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.web.browsers",
+    "to.speed.mode.migration.done": "true",
+    "ts.external.directory.path": "/home/h3rhex/Development/WebDev/H3rHex/source-code/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/source-code/src" />
+      <recent name="$PROJECT_DIR$/source-code" />
+      <recent name="$PROJECT_DIR$/source-code/src/pages" />
+      <recent name="$PROJECT_DIR$/source-code/src/language" />
+      <recent name="$PROJECT_DIR$/source-code/src/Language" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JavaScript Debug.localhost:5173">
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/H3rHex/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="localhost:5173" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:5173/">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.localhost:5173" />
         <item itemvalue="JavaScript Debug.index.html" />
       </list>
     </recent_temporary>
@@ -110,7 +99,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-WS-243.23654.157" />
+        <option value="bundled-js-predefined-d6986cc7102b-e03c56caf84a-JavaScript-WS-252.23892.411" />
       </set>
     </attachedChunks>
   </component>
@@ -123,6 +112,8 @@
       <option name="presentableId" value="Default" />
       <updated>1738944331340</updated>
       <workItem from="1738944333461" duration="55000" />
+      <workItem from="1755205940295" duration="147000" />
+      <workItem from="1755206115993" duration="6420000" />
     </task>
     <servers />
   </component>
