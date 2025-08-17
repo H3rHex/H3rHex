@@ -1,0 +1,20 @@
+{
+  "interests":[
+    "area-interest-1",
+    "area-interest-2",
+    "area-interest-3",
+    "area-interest-4",
+    "area-interest-5"
+  ],
+
+  "studies": [
+    {
+      "title": "title-smr",
+      "description": "description-smr"
+    },
+    {
+      "title": "title-daw",
+      "description": "description-daw"
+    }
+  ]
+}
