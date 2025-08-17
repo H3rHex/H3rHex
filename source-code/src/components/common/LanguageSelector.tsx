@@ -21,7 +21,7 @@ const LanguageSelector: React.FC = () => {
     return (
         <div>
             <button
-                className="select-none cursor-pointer p-1 w-10 rounded-lg transition-all hover:scale-120 active: transform-y-2 text-black dark:text-white "
+                className="select-none cursor-[var(--pointer-cursor)] p-1 w-10 rounded-lg  transition-all hover:scale-110 active: transform-y-2 text-black dark:text-white "
                 onClick={changeLanguage}
             >
                 {lang === "es" ? "ES" : "EN"}

@@ -1,7 +1,12 @@
 import React from "react";
 import {useTranslation} from "react-i18next";
+import {useScreenSize} from "../../hooks/useScreenSize.tsx";
+
+// Components
 import LanguageSelector from "./LanguageSelector.tsx";
 import ThemeSwitcher from "../other/ThemeSwitcher.tsx";
+import {BsHouseFill, BsRocketTakeoffFill} from "react-icons/bs";
+
 
 interface Props {
     stateWebMode: string,
@@ -10,6 +15,8 @@ interface Props {
 
 const Header:React.FC<Props> = ({stateWebMode, setStateWebMode}) => {
     const {t} = useTranslation();
+    const {width} = useScreenSize();
+
     return (
         <header className="
             flex flex-row items-center justify-center gap-10 
@@ -26,12 +33,16 @@ const Header:React.FC<Props> = ({stateWebMode, setStateWebMode}) => {
                 "
             >
                 <a
-                    className="transition-transform duration-200 hover:scale-105"
-                    href="/">{t("page-home")}
+                    className="text-shadow-xs text-shadow-gray-500 dark:text-shadow-none  ransition-transform duration-200 hover:scale-110 hover:dark:text-purple-300"
+                    href="/"
+                >
+                    {width > 768 ? t("page-home") : <BsHouseFill/>}
                 </a>
                 <a
-                    className="transition-transform duration-200 hover:scale-105"
-                    href="/projects">{t("page-projects")}
+                    className="text-shadow-xs text-shadow-gray-500 dark:text-shadow-none  transition-transform duration-200 hover:scale-110 hover:dark:text-purple-300"
+                    href="/projects"
+                >
+                    {width > 768 ? t("page-projects") : <BsRocketTakeoffFill/>}
                 </a>
             </nav>
             <LanguageSelector/>

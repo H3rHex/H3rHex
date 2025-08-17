@@ -20,7 +20,7 @@ const ThemeSwitcher: React.FC<Props> = ({ stateWebMode, setStateWebMode }) => {
       "
         >
             {stateWebMode === 'dark' ? (
-                <BsLightbulb className="rotate-180 text-gray-300 hover:text-gray-400 active:translate-y-1" />
+                <BsLightbulb className="rotate-180 text-gray-300 cursor-[var(--pointer-cursor)] hover:text-gray-400 active:translate-y-1" />
             ) : (
                 <BsLightbulbFill className="rotate-180 text-yellow-300 hover:text-yellow-400 active:translate-y-1" />
             )}

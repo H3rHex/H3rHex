@@ -1,6 +1,36 @@
 @import "tailwindcss";
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
+@theme {
+    --font-roboto: 'Roboto Mono', monospace;
+    --normal-cursor: url('./assets/cursor/normal.cur'), auto;
+    --pointer-cursor: url('./assets/cursor/precision.cur'), auto;
+    --text-cursor: url('./assets/cursor/text.cur'), auto;
+    --link-cursor: url('./assets/cursor/link.cur'), auto;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    cursor: var(--normal-cursor);
+}
+
+a {
+    cursor: var(--link-cursor)
+}
+
+button {
+    cursor: var(--pointer-cursor)
+}
+
+html {
+    cursor:url('./assets/cursor/normal.cur'), auto;
+}
 
 /* ROOT BACKGROUND*/
 
@@ -31,13 +61,15 @@
 
 /* LIGHT */
 [data-theme="light"] .gradient-bg::before {
-    background: linear-gradient(135deg, #a5b4fc, #8b5cf6, #ec4899);
+    /* Tonos pastel de lila a rosa */
+    background: linear-gradient(135deg, #e6b0ff, #c2a0ff, #ffadad);
     top: 10%;
     left: 10%;
 }
 
 [data-theme="light"] .gradient-bg::after {
-    background: linear-gradient(135deg, #4ade80, #10b981, #22c55e);
+    /* Tonos suaves de verde a azul */
+    background: linear-gradient(135deg, #a0ffc2, #a0d4ff, #adadff);
     top: 30%;
     right: 5%;
 }

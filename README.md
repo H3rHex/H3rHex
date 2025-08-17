@@ -1,5 +1,5 @@
 # Hello, I'm Alejandro 👋
-### Tech enthusiast from Spain with a strong focus on programming, security, and innovative solutions.
+### A tech enthusiast tech enthusiast driven by curiosity, always expanding my knowledge to the next challenge.
 
 <div style="display: flex; align-items: flex-start; justify-content: space-around">
   <img src="https://github-readme-stats.vercel.app/api?username=h3rhex&title_color=ffffff&text_color=ffffff&bg_color=0d1117&border_color=9400D3&icon_color=ff005c"/>
@@ -14,7 +14,7 @@ Soy un desarrollador apasionado por la tecnología, siempre explorando nuevas he
 
 ## Technologies I've Worked With 💻 / Tecnologías con las que he trabajado
 
-### Languages & Scripts
+### Programing Languages
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
 ![Java](https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white)
@@ -37,10 +37,6 @@ Soy un desarrollador apasionado por la tecnología, siempre explorando nuevas he
 ![npm](https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 
-## Current Projects 🌱 / Proyectos Actuales
-* Building **NextStep CV**, a web application to create professional résumés.
-* Trabajando en **NextStep CV**, una aplicación web para crear currículums profesionales.
-
 ## Areas of Interest / Áreas de Interés
 * Cybersecurity
 * Software Development
@@ -56,12 +52,9 @@ Soy un desarrollador apasionado por la tecnología, siempre explorando nuevas he
 **DAW - Desarrollo de Aplicaciones Web**  
 *Actualmente cursando para convertirme en desarrollador full-stack con enfoque en tecnologías web modernas.*
 
-**Microcomputer Systems and Networks**  
+**MSN - Microcomputer Systems and Networks**  
 *Acquired a strong foundation in computer systems and network administration.*
 
-**Sistemas Microinformáticos y Redes**  
+**SMR - Sistemas Microinformáticos y Redes**  
 *Obtuve una sólida base en sistemas informáticos y administración de redes.*
 
-## Connect with Me 💬 / Conecta Conmigo
-<a href="https://www.linkedin.com/in/tu-perfil/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
-<a href="https://github.com/h3rhex"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" /></a>

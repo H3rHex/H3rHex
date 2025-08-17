@@ -5,24 +5,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="34125f5d-f231-4f93-9413-8f3defd42191" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/source-code/src/components/other/GitHubSvg.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source-code/src/components/other/ThemeSwitcher.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source-code/src/locales/en.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source-code/src/locales/es.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source-code/src/pages/Home.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source-code/src/pages/Projects.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source-code/public/JSON/interest-studies.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source-code/public/JSON/techStack.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source-code/src/components/common/Card.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source-code/src/components/common/Splitter.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source-code/src/components/common/text/TextH1.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source-code/src/components/common/text/TextH2.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source-code/src/components/common/text/TextH3.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source-code/src/components/common/text/TypeWriter.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source-code/src/components/other/TechStackImg.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source-code/src/hooks/useInView.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source-code/src/hooks/useScreenSize.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/index-BxPejJnt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/index-oZS3rrPQ.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/favicon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/github-icon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/source-code/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/source-code/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source-code/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/source-code/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source-code/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/source-code/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source-code/public/locales/en.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source-code/public/locales/es.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/source-code/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/source-code/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source-code/src/components/common/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/source-code/src/components/common/Footer.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source-code/src/components/common/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/source-code/src/components/common/Header.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source-code/src/components/common/LanguageSelector.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/source-code/src/components/common/LanguageSelector.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source-code/src/i18n.ts" beforeDir="false" afterPath="$PROJECT_DIR$/source-code/src/i18n.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-code/src/components/common/text/TextP.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/source-code/src/components/common/text/TextP.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-code/src/components/other/GitHubSvg.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/source-code/src/components/other/GitHubSvg.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-code/src/components/other/ThemeSwitcher.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/source-code/src/components/other/ThemeSwitcher.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source-code/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/source-code/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-code/src/locales/en.json" beforeDir="false" afterPath="$PROJECT_DIR$/source-code/src/locales/en.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-code/src/locales/es.json" beforeDir="false" afterPath="$PROJECT_DIR$/source-code/src/locales/es.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-code/src/pages/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/source-code/src/pages/Home.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source-code/vite.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/source-code/vite.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,6 +46,7 @@
       <list>
         <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
+        <option value="tsconfig.json" />
       </list>
     </option>
   </component>
@@ -52,34 +64,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JavaScript Debug.index.html.executor": "Run",
-    "JavaScript Debug.localhost:5173.executor": "Debug",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "v2",
-    "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "/h3rhex/Development/WebDev/H3rHex",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.settings.ide.settings.web.browsers",
-    "to.speed.mode.migration.done": "true",
-    "ts.external.directory.path": "/home/h3rhex/Development/WebDev/H3rHex/source-code/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JavaScript Debug.index.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.localhost:5173.executor&quot;: &quot;Debug&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;v2&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/h3rhex/Development/WebDev/H3rHex/source-code/src/components/common/text&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.web.browsers&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/home/h3rhex/Development/WebDev/H3rHex/source-code/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/source-code/src/components/common/text" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/source-code/src/components/other" />
+      <recent name="$PROJECT_DIR$/source-code/public/JSON" />
+      <recent name="$PROJECT_DIR$/source-code/public" />
       <recent name="$PROJECT_DIR$/source-code/src" />
-      <recent name="$PROJECT_DIR$/source-code" />
-      <recent name="$PROJECT_DIR$/source-code/src/pages" />
-      <recent name="$PROJECT_DIR$/source-code/src/language" />
-      <recent name="$PROJECT_DIR$/source-code/src/Language" />
+      <recent name="$PROJECT_DIR$/source-code/public/locales" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.localhost:5173">
@@ -113,7 +128,10 @@
       <updated>1738944331340</updated>
       <workItem from="1738944333461" duration="55000" />
       <workItem from="1755205940295" duration="147000" />
-      <workItem from="1755206115993" duration="6420000" />
+      <workItem from="1755206115993" duration="6971000" />
+      <workItem from="1755258458207" duration="12885000" />
+      <workItem from="1755354090325" duration="6928000" />
+      <workItem from="1755431986771" duration="1654000" />
     </task>
     <servers />
   </component>

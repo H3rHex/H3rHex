@@ -1,4 +1,33 @@
 {
   "page-home" : "Home",
-  "page-projects": "Projects"
+  "page-projects": "Projects",
+  "home-welcome-text": "Hello, I'm Alejandro \uD83D\uDC4B",
+  "home-phrase-0": "Crafting digital realities.",
+  "home-phrase-1": "Building from the core.",
+  "home-phrase-2": "Curiosity drives the code.",
+  "home-phrase-3": "Systems thinker. Code builder.",
+  "home-phrase-4": "Engineering with curiosity.",
+  "home-phrase-5": "Bridging logic and creation.",
+  "home-phrase-6": "Beyond the surface level.",
+  "home-phrase-7": "Where curiosity meets code.",
+  "home-personal-phrase" : "A tech enthusiast tech enthusiast driven by curiosity, always expanding my knowledge to the next challenge.",
+  "home-about-me": "About me \uD83D\uDE80",
+  "home-about-me-content": "I am a developer passionate about technology, always exploring new tools, frameworks, and methodologies to solve modern challenges. My passion for technology is complemented by a solid foundation in computer systems and networks. I am actively seeking opportunities to apply my skills in web development and cybersecurity.\n",
+  "home-interests": "Areas of Interest",
+  "home-technologies-section-title": "Technologies I've Worked With \uD83D\uDCBB",
+  "home-technologies-langs-scripts": "Programing Languages",
+  "home-technologies-frameworks-title": "Frameworks",
+  "home-technologies-tools_platforms-title": "Tools & Platforms",
+  "home-studies-title": "Education \uD83C\uDF93",
+  "area-interest-1": "Cybersecurity",
+  "area-interest-2": "Software Development",
+  "area-interest-3": "Low-Level Systems",
+  "area-interest-4": "System Security & Ethical Hacking",
+  "area-interest-5": "Automation & Scripting",
+  "title-smr": "MSN - Microcomputer Systems and Networks",
+  "description-smr": "Acquired a strong foundation in computer systems and network administration.",
+  "title-daw": "DAW - Development of Web Applications",
+  "description-daw": "Currently studying to become a full-stack developer with a focus on modern web technologies."
+
 }
+
