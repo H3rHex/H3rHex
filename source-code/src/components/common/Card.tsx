@@ -6,14 +6,15 @@ type props = {
     className?: string;
 };
 
-const Card: React.FC<props> = ({ children, className }) => {
+const Card: React.FC<props> = ({ children, className}) => {
     const { ref, isVisible } = useInView<HTMLImageElement>({loop:false});
 
     return (
         <div
             ref={ref}
             className={`
-            flex flex-col justify-start items-center
+            z-1
+            flex flex-col justify-center items-center
             w-full p-3 lg:p-10
             bg-gray-200 dark:bg-gray-700
             border-2 border-gray-300 dark:border-gray-800 rounded-2xl

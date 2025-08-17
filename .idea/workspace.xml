@@ -5,36 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="34125f5d-f231-4f93-9413-8f3defd42191" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/source-code/public/JSON/interest-studies.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source-code/public/JSON/techStack.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source-code/src/components/common/Card.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source-code/src/components/common/Splitter.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source-code/src/components/common/text/TextH1.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source-code/src/components/common/text/TextH2.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source-code/src/components/common/text/TextH3.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source-code/src/components/common/text/TypeWriter.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source-code/src/components/other/TechStackImg.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source-code/src/hooks/useInView.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source-code/src/hooks/useScreenSize.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source-code/public/JSON/projects.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source-code/src/components/other/Project-Tag.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source-code/src/components/other/Project.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/index-BxPejJnt.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/index-oZS3rrPQ.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/favicon.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/github-icon.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source-code/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/source-code/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source-code/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/source-code/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source-code/src/components/common/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/source-code/src/components/common/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source-code/src/components/common/LanguageSelector.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/source-code/src/components/common/LanguageSelector.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source-code/src/components/common/text/TextP.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/source-code/src/components/common/text/TextP.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source-code/src/components/other/GitHubSvg.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/source-code/src/components/other/GitHubSvg.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source-code/src/components/other/ThemeSwitcher.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/source-code/src/components/other/ThemeSwitcher.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source-code/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/source-code/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-code/src/components/common/Card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/source-code/src/components/common/Card.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source-code/src/locales/en.json" beforeDir="false" afterPath="$PROJECT_DIR$/source-code/src/locales/en.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source-code/src/locales/es.json" beforeDir="false" afterPath="$PROJECT_DIR$/source-code/src/locales/es.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source-code/src/pages/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/source-code/src/pages/Home.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source-code/vite.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/source-code/vite.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-code/src/pages/Projects.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/source-code/src/pages/Projects.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,8 +24,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="TypeScript File" />
-        <option value="TypeScript JSX File" />
         <option value="tsconfig.json" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -54,7 +33,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
@@ -131,7 +110,7 @@
       <workItem from="1755206115993" duration="6971000" />
       <workItem from="1755258458207" duration="12885000" />
       <workItem from="1755354090325" duration="6928000" />
-      <workItem from="1755431986771" duration="1654000" />
+      <workItem from="1755431986771" duration="9887000" />
     </task>
     <servers />
   </component>

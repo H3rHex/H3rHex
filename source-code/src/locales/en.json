@@ -27,7 +27,11 @@
   "title-smr": "MSN - Microcomputer Systems and Networks",
   "description-smr": "Acquired a strong foundation in computer systems and network administration.",
   "title-daw": "DAW - Development of Web Applications",
-  "description-daw": "Currently studying to become a full-stack developer with a focus on modern web technologies."
+  "description-daw": "Currently studying to become a full-stack developer with a focus on modern web technologies.",
+  "next-step-cv-description": "Web application for easily creating professional resumes. Developed with modern architecture (React, Vite, TypeScript) and a robust backend in Flask and Python for data management and PDF generation with WeasyPrint.",
+  "gym-tracker-description": "GymTracker is a web application designed to simplify tracking your fitness routines. Developed with a Spring Boot backend and a lightweight JavaScript frontend, it allows you to log your weekly workouts and manage your profile. It is a modular architecture project, perfect for showcasing your skills in full-stack web application development.",
+  "mini-shell-description": "Bash-based shell written in C++. Its main feature is that it’s developed using low-level logic and system calls, avoiding high-level functions. This low-level approach is the core development principle behind the shell.",
+  "image-ascier-description": "ImageAscier-V2 is a fast and flexible C++17 tool that transforms images into stunning ASCII art. It offers multiple output modes, including direct terminal display and export to a file. This project is ideal for developers interested in image processing."
 
 }
 
