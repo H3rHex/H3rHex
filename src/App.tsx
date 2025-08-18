@@ -1,6 +1,6 @@
 import {useEffect, useState} from 'react'
 import {Routes, Route } from "react-router-dom";
-
+import {useHtmlLang} from "./hooks/useHtmlLang.tsx";
 
 // Static components
 import Header from "./components/common/Header.tsx";
@@ -11,6 +11,7 @@ import Projects from "./pages/Projects.tsx";
 import Footer from "./components/common/Footer.tsx";
 
 function App() {
+    useHtmlLang();
     const [webMode, setWebMode] = useState<string>(localStorage.getItem("theme") || "dark");
 
     useEffect(() => {
@@ -25,7 +26,7 @@ function App() {
                     setStateWebMode={setWebMode}
                 />
                 <Routes>
-                    <Route path="/"element={<Home />} />
+                    <Route path="/" element={<Home />} />
                     <Route path="/projects" element={<Projects />} />
                 </Routes>
                 <Footer />

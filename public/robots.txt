@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://h3rhex.github.io/H3rHex/sitemap.xml

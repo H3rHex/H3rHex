@@ -51,7 +51,7 @@ const Home:React.FC = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch("/JSON/techStack.json");
+                const response = await fetch("./JSON/techStack.json");
                 if (!response.ok) {
                     console.error("Error HTTP:", response.status);
                     return null;
@@ -75,7 +75,7 @@ const Home:React.FC = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch("/JSON/interest-studies.json");
+                const response = await fetch("./JSON/interest-studies.json");
                 if(!response.ok) {
                     console.error("Error HTTP:", response.status);
                     return null;
@@ -128,7 +128,7 @@ const Home:React.FC = () => {
 
             <section className="flex flex-col justify-start items-center p-5">
                 <div className="w-full max-w-[164px] h-auto mb-5">
-                    <img className={"w-full h-auto object-cover rounded-full shadow-lg shadow-green-200 dark:shadow-purple-950 "} src={"/favicon.svg"} alt="favicon" />
+                    <img className={"w-full h-auto object-cover rounded-full shadow-lg shadow-green-200 dark:shadow-purple-950 "} src={"./favicon.svg"} alt="favicon" />
                 </div>
                 <TextP className={"w-full lg:max-w-1/2 text-center p-5"}>{t("home-personal-phrase")}</TextP>
             </section>

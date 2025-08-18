@@ -23,7 +23,7 @@ const Projects: React.FC = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch("/JSON/projects.json");
+                const response = await fetch("./JSON/projects.json");
                 if (!response.ok) {
                     console.error("Error HTTP:", response.status);
                     return [];

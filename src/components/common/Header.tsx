@@ -3,7 +3,7 @@ import {useTranslation} from "react-i18next";
 import {useScreenSize} from "../../hooks/useScreenSize.tsx";
 
 // Components
-import LanguageSelector from "./LanguageSelector.tsx";
+import LanguageSelector from "../other/LanguageSelector.tsx";
 import ThemeSwitcher from "../other/ThemeSwitcher.tsx";
 import {BsHouseFill, BsRocketTakeoffFill} from "react-icons/bs";
 
