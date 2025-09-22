@@ -11,7 +11,7 @@
       },
       {
         "name": "C",
-        "badge_url": "https://img.shields.io/badge/C-00599C?logo=c&logoColor=white"
+        "badge_url": "https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white"
       },
       {
         "name": "Java",
