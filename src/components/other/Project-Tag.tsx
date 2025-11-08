@@ -8,18 +8,21 @@ interface TagProps {
 
 const Tag: React.FC<TagProps> = ({ text, className }) => {
     return (
-        <TextP
-            className={`
-        inline-block px-3 py-1 
-        text-xs sm:text-sm font-medium 
-        bg-gray-200 dark:bg-gray-600 
-        text-gray-800 dark:text-gray-200 
-        rounded-full shadow-sm 
-        ${className || ""}
-      `}
-        >
-            {text}
-        </TextP>
+        <li>
+            <TextP
+                className={`
+                inline-block px-3 py-1 
+                text-xs sm:text-sm font-medium 
+                bg-gray-200 dark:bg-gray-600 
+                text-gray-800 dark:text-gray-200 
+                rounded-full shadow-sm 
+                ${className || ""}
+            `}
+            >
+                {text}
+            </TextP>
+        </li>
+
     );
 };
 

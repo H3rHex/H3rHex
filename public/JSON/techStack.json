@@ -10,8 +10,8 @@
         "badge_url": "https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white"
       },
       {
-        "name":"C",
-        "badge_url":"https://img.shields.io/badge/C-00599C?logo=c&logoColor=white"
+        "name": "C",
+        "badge_url": "https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white"
       },
       {
         "name": "Java",
@@ -35,12 +35,7 @@
         {
           "name": "Tailwind CSS",
           "badge_url": "https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white"
-        },
-        {
-          "name": "Vite",
-          "badge_url": "https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white"
-        },
-        {
+        }
       ],
       "backend": [
         {
@@ -50,14 +45,9 @@
         {
           "name": "Spring Boot",
           "badge_url": "https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white"
-        },
-        {
-          "name": "Node.js",
-          "badge_url": "https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white"
         }
       ]
     },
-
     "tools_platforms_stack": [
       {
         "name": "Git",

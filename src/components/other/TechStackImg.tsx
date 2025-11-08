@@ -15,6 +15,7 @@ const TechStackImg: React.FC<TechStackImgProps> = ({ src, alt }) => {
             ref={ref}
             src={src}
             alt={alt}
+            loading={"lazy"}
             className={`
                 rounded-lg
                 shadow-xl shadow-gray-400 dark:shadow-lg dark:shadow-blue-950

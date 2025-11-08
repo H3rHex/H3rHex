@@ -48,7 +48,7 @@ const Projects: React.FC = () => {
             ">
             {projects.map((project, idx) => (
                 <Project
-                    key={idx} // 👈 si tienes un id mejor usarlo aquí
+                    key={idx}
                     title={project.title}
                     description={t(project.description)}
                     github={project.github}

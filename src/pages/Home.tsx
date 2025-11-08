@@ -12,6 +12,7 @@ import TypeWriter from "../components/common/text/TypeWriter.tsx";
 import Card from "../components/common/Card.tsx";
 import Splitter from "../components/common/Splitter.tsx";
 import TechStackImg from "../components/other/TechStackImg.tsx";
+import TextH4 from "../components/common/text/TextH4.tsx";
 
 interface TechItem {
     name: string;
@@ -112,7 +113,7 @@ const Home:React.FC = () => {
             z-10
             "
         >
-            {/*WELCOME*/}
+            {/*FIRSTS SECTION -- WELCOME*/}
             <section className="flex flex-col">
                 <TextH1
                     className={" mb-2 text-center"}
@@ -124,14 +125,15 @@ const Home:React.FC = () => {
                     loop={true}
                     text={homePhrases}
                 />
+
+                <div className="flex flex-col justify-start items-center p-5">
+                    <div className="w-full max-w-[164px] h-auto mb-5">
+                        <img className={"w-full h-auto object-cover rounded-full shadow-lg shadow-green-200 dark:shadow-purple-950 "} src={"./favicon.svg"} alt="favicon" />
+                    </div>
+                    <TextP className={"w-full lg:max-w-1/2 text-center p-5"}>{t("home-personal-phrase")}</TextP>
+                </div>
             </section>
 
-            <section className="flex flex-col justify-start items-center p-5">
-                <div className="w-full max-w-[164px] h-auto mb-5">
-                    <img className={"w-full h-auto object-cover rounded-full shadow-lg shadow-green-200 dark:shadow-purple-950 "} src={"./favicon.svg"} alt="favicon" />
-                </div>
-                <TextP className={"w-full lg:max-w-1/2 text-center p-5"}>{t("home-personal-phrase")}</TextP>
-            </section>
 
             {/*ABOUT ME*/}
             <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mx-auto w-full lg:max-w-7xl lg:px-4 mb-10">
@@ -148,45 +150,59 @@ const Home:React.FC = () => {
                     <TextH2 className={"tracking-widest p-2 mb-4"}>
                         {t("home-interests")}
                     </TextH2>
-                    <div>
+                    <ul>
                         {interestStudies != null && interestStudies.interests.map((content, index) => (
-                            <TextP
-                                className={"p-2"}
-                                key={index}
-                            >
-                                {t(content)}
-                            </TextP>
+                            <li key={index}>
+                                <TextP
+                                    className={"p-2"}
+                                    key={index}
+                                >
+                                    {t(content)}
+                                </TextP>
+                            </li>
                         ))}
-                    </div>
+                    </ul>
                 </Card
                  >
 
                 <Card
-                    className={"flex flex-col gap-2"}
                 >
-                    <img
-                        className="w-full h-auto max-w-[90%]"
-                        src="https://github-readme-stats.vercel.app/api?username=h3rhex&title_color=ffffff&text_color=ffffff&bg_color=0d1117&border_color=9400D3&icon_color=ff005c"
-                        alt="github-stats"
-                    />
+                    <figcaption className={"flex justify-center"}>
+                        <img
+                            className="w-full h-auto max-w-[90%]"
+                            src="https://github-readme-stats.vercel.app/api?username=h3rhex&title_color=ffffff&text_color=ffffff&bg_color=0d1117&border_color=9400D3&icon_color=ff005c"
+                            alt="github-stats"
+                            loading={"eager"}
 
-                    <img
-                        className="w-full h-auto max-w-[90%]"
-                        src="https://github-readme-stats.vercel.app/api/top-langs/?username=h3rhex&layout=compact&langs_count=10&title_color=ffffff&text_color=ffffff&bg_color=0d1117&border_color=9400D3&icon_color=ff005c"
-                        alt="github-stats"
-                    />
+                        />
+                    </figcaption>
+
+                    <figcaption className={"flex justify-center"}>
+                        <img
+                            className="w-full h-auto max-w-[90%]"
+                            src="https://github-readme-stats.vercel.app/api/top-langs/?username=h3rhex&layout=compact&langs_count=10&title_color=ffffff&text_color=ffffff&bg_color=0d1117&border_color=9400D3&icon_color=ff005c"
+                            alt="github-stats"
+                            loading={"eager"}
+                        />
+                    </figcaption>
+
                 </Card>
             </section>
 
             {/*TECH STACK*/}
             <section className="flex flex-col lg:p-5">
-                <TextH2
-                    className={"tracking-widest"}
-                >
-                    {t("home-technologies-section-title")}
-                </TextH2>
+                <header>
+                    <TextH2
+                        className={"tracking-widest"}
+                    >
+                        {t("home-technologies-section-title")}
+                    </TextH2>
+                </header>
+
                 <Splitter />
-                <div>
+
+                {/** LANGUAGES **/}
+                <article>
                     <TextH3>
                         {t("home-technologies-langs-scripts")}
                     </TextH3>
@@ -198,39 +214,40 @@ const Home:React.FC = () => {
                             </div>
                         ))}
                     </div>
+                </article>
 
+                {/*FRAMEWOKS*/}
+                <article>
                     <TextH3>
                         {t("home-technologies-frameworks-title")}
                     </TextH3>
 
-                    <div className="flex flex-col flex-wrap gap-2 p-5 mx-auto mb-2 max-w-7xl">
-                        <TextP className={"mb-2"}>
-                            <strong>
+                    <div className="flex flex-col flex-wrap gap-2 p-5 mx-auto mb-2 max-w-7xl" aria-labelledby="frontend">
+                        <TextH4 className={"mb-2"}>
                                 Frontend:
-                            </strong>
-                        </TextP>
-                        <div className="flex flex-col xl:flex-row flex-wrap gap-2 mb-2">
-                            {techStack != null && techStack.framework_stack.frontend.map((item, i) => (
-                                <div key={i}>
+                        </TextH4>
+                        <ul className="flex flex-col xl:flex-row flex-wrap gap-2 mb-2">
+                            {techStack != null && techStack.framework_stack.frontend.map((item) => (
+                                <li key={item.name}>
                                     <TechStackImg src={item.badge_url} alt={item.name} />
-                                </div>
+                                </li>
                             ))}
-                        </div>
+                        </ul>
 
-                        <TextP className={"mb-2"}>
-                            <strong>
+                        <TextH4 className={"mb-2"}>
                                 Backend:
-                            </strong>
-                        </TextP>
-                        <div className="flex flex-col xl:flex-row flex-wrap gap-2 mb-2">
-                            {techStack != null && techStack.framework_stack.backend.map((item, i) => (
-                                <div key={i}>
+                        </TextH4>
+                        <ul className="flex flex-col xl:flex-row flex-wrap gap-2 mb-2">
+                            {techStack != null && techStack.framework_stack.backend.map((item) => (
+                                <li key={item.name}>
                                     <TechStackImg src={item.badge_url} alt={item.name} />
-                                </div>
+                                </li>
                             ))}
-                        </div>
+                        </ul>
                     </div>
+                </article>
 
+                <article>
                     <TextH3>
                         {t("home-technologies-tools_platforms-title")}
                     </TextH3>
@@ -242,8 +259,7 @@ const Home:React.FC = () => {
                             </div>
                         ))}
                     </div>
-
-                </div>
+                </article>
             </section>
 
             <section className={"flex flex-col p-5"}>
