@@ -27,6 +27,13 @@
         "image": "./ProjectAssets/NextStepCv-Icon.webp",
         "github": "https://github.com/H3rHex/Next-Step-CV",
         "tags": ["react","python","flask","typescript","tailwindcss"]
-      }
+      },
+      {
+          "title": "Z-Hold",
+          "description": "Endless survive game",
+          "image": "./ProjectAssets/Z-Hold.icon.png",
+          "github": "https://github.com/H3rHex/Z-Hold",
+          "website:": "https://h3rhex.github.io/Z-Hold/"
+        }
   ]
 }
