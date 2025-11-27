@@ -30,7 +30,7 @@
       },
       {
           "title": "Z-Hold",
-          "description": "Endless survive game",
+          "description": "z-hold-description",
           "image": "./ProjectAssets/Z-Hold.icon.png",
           "github": "https://github.com/H3rHex/Z-Hold",
           "website:": "https://h3rhex.github.io/Z-Hold/"
