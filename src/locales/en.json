@@ -1,5 +1,5 @@
 {
-  "page-home" : "Home",
+  "page-home": "Home",
   "page-projects": "Projects",
   "home-welcome-text": "Hello, I'm Alejandro \uD83D\uDC4B",
   "home-phrase-0": "Crafting digital realities.",
@@ -10,7 +10,7 @@
   "home-phrase-5": "Bridging logic and creation.",
   "home-phrase-6": "Beyond the surface level.",
   "home-phrase-7": "Where curiosity meets code.",
-  "home-personal-phrase" : "A tech enthusiast tech enthusiast driven by curiosity, always expanding my knowledge to the next challenge.",
+  "home-personal-phrase": "A tech enthusiast tech enthusiast driven by curiosity, always expanding my knowledge to the next challenge.",
   "home-about-me": "About me \uD83D\uDE80",
   "home-about-me-content": "I am a developer passionate about technology, always exploring new tools, frameworks, and methodologies to solve modern challenges. My passion for technology is complemented by a solid foundation in computer systems and networks. I am actively seeking opportunities to apply my skills in web development and cybersecurity.\n",
   "home-interests": "Areas of Interest",
@@ -31,7 +31,6 @@
   "next-step-cv-description": "Web application for easily creating professional resumes. Developed with modern architecture (React, Vite, TypeScript) and a robust backend in Flask and Python for data management and PDF generation with WeasyPrint.",
   "gym-tracker-description": "GymTracker is a web application designed to simplify tracking your fitness routines. Developed with a Spring Boot backend and a lightweight JavaScript frontend, it allows you to log your weekly workouts and manage your profile. It is a modular architecture project, perfect for showcasing your skills in full-stack web application development.",
   "mini-shell-description": "Bash-based shell written in C++. Its main feature is that it’s developed using low-level logic and system calls, avoiding high-level functions. This low-level approach is the core development principle behind the shell.",
-  "image-ascier-description": "ImageAscier-V2 is a fast and flexible C++17 tool that transforms images into stunning ASCII art. It offers multiple output modes, including direct terminal display and export to a file. This project is ideal for developers interested in image processing."
-
+  "image-ascier-description": "ImageAscier-V2 is a fast and flexible C++17 tool that transforms images into stunning ASCII art. It offers multiple output modes, including direct terminal display and export to a file. This project is ideal for developers interested in image processing.",
+  "z-hold-description": "Top-down survival game where the player must resist endless waves of zombies that appear from the edges of the screen. The main objective is to survive as long as possible while eliminating hordes of enemies with different characteristics."
 }
-

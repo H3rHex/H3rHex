@@ -1,39 +1,61 @@
 {
   "projects": [
-      {
-        "title": "GymTracker",
-        "description": "gym-tracker-description",
-        "image": "./ProjectAssets/GymTracker-Icon.webp",
-        "github": "https://github.com/H3rHex/GymTracker",
-        "tags": ["java","website","spring-boot","full-stack"]
-      },
-      {
-        "title": "Image Ascier",
-        "description": "image-ascier-description",
-        "image": "./ProjectAssets/ImageAscier-Icon.webp",
-        "github": "https://github.com/H3rHex/ImageAscier",
-        "tags": ["cpp" ,"asccii"]
-      },
-      {
-        "title": "MiniShell C++",
-        "description": "mini-shell-description",
-        "image": "./ProjectAssets/MiniShell-Icon.webp",
-        "github": "https://github.com/H3rHex/MiniShell-in-Cpp",
-        "tags": ["cpp","low-level","shell"]
-      },
-      {
-        "title": "Next Step CV",
-        "description": "next-step-cv-description",
-        "image": "./ProjectAssets/NextStepCv-Icon.webp",
-        "github": "https://github.com/H3rHex/Next-Step-CV",
-        "tags": ["react","python","flask","typescript","tailwindcss"]
-      },
-      {
-          "title": "Z-Hold",
-          "description": "Endless survive game",
-          "image": "./ProjectAssets/Z-Hold.icon.png",
-          "github": "https://github.com/H3rHex/Z-Hold",
-          "website:": "https://h3rhex.github.io/Z-Hold/"
-        }
+    {
+      "title": "GymTracker",
+      "description": "gym-tracker-description",
+      "image": "./ProjectAssets/GymTracker-Icon.webp",
+      "github": "https://github.com/H3rHex/GymTracker",
+      "tags": [
+        "java",
+        "website",
+        "spring-boot",
+        "full-stack"
+      ]
+    },
+    {
+      "title": "Image Ascier",
+      "description": "image-ascier-description",
+      "image": "./ProjectAssets/ImageAscier-Icon.webp",
+      "github": "https://github.com/H3rHex/ImageAscier",
+      "tags": [
+        "cpp",
+        "asccii"
+      ]
+    },
+    {
+      "title": "MiniShell C++",
+      "description": "mini-shell-description",
+      "image": "./ProjectAssets/MiniShell-Icon.webp",
+      "github": "https://github.com/H3rHex/MiniShell-in-Cpp",
+      "tags": [
+        "cpp",
+        "low-level",
+        "shell"
+      ]
+    },
+    {
+      "title": "Next Step CV",
+      "description": "next-step-cv-description",
+      "image": "./ProjectAssets/NextStepCv-Icon.webp",
+      "github": "https://github.com/H3rHex/Next-Step-CV",
+      "tags": [
+        "react",
+        "python",
+        "flask",
+        "typescript",
+        "tailwindcss"
+      ]
+    },
+    {
+      "title": "Z-Hold",
+      "description": "z-hold-decription",
+      "image": "./ProjectAssets/Z-Hold.icon.png",
+      "github": "https://github.com/H3rHex/Z-Hold",
+      "website": "https://h3rhex.github.io/Z-Hold/",
+      "tags": [
+        "godot",
+        "game-dev"
+      ]
+    }
   ]
 }
