@@ -1,18 +1,6 @@
 {
   "projects": [
     {
-      "title": "GymTracker",
-      "description": "gym-tracker-description",
-      "image": "./ProjectAssets/GymTracker-Icon.webp",
-      "github": "https://github.com/H3rHex/GymTracker",
-      "tags": [
-        "java",
-        "website",
-        "spring-boot",
-        "full-stack"
-      ]
-    },
-    {
       "title": "Image Ascier",
       "description": "image-ascier-description",
       "image": "./ProjectAssets/ImageAscier-Icon.webp",
