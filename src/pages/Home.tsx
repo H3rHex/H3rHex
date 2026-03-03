@@ -1,5 +1,6 @@
-import React, {useState, useEffect} from "react";
-import {useTranslation} from "react-i18next";
+import React, { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
+import { useIsDarkMode } from "../hooks/useDarkMode.tsx";
 
 //Text
 import TextH1 from "../components/common/text/TextH1.tsx";
@@ -15,271 +16,279 @@ import TechStackImg from "../components/other/TechStackImg.tsx";
 import TextH4 from "../components/common/text/TextH4.tsx";
 
 interface TechItem {
-    name: string;
-    badge_url: string;
+  name: string;
+  badge_url: string;
 }
 
 interface FrameworkStack {
-    frontend: TechItem[];
-    backend: TechItem[];
+  frontend: TechItem[];
+  backend: TechItem[];
 }
 
 interface TechStackData {
-    lang_stack: TechItem[];
-    framework_stack: FrameworkStack;
-    tools_platforms_stack: TechItem[];
+  lang_stack: TechItem[];
+  framework_stack: FrameworkStack;
+  tools_platforms_stack: TechItem[];
 }
 
 interface TechStackResponse {
-    techStack: TechStackData;
+  techStack: TechStackData;
 }
 
-interface Study{
-    title: string;
-    description: string;
+interface Study {
+  title: string;
+  description: string;
 }
 
-interface InterestStudiesData{
-    studies: Study[];
-    interests: string[];
+interface InterestStudiesData {
+  studies: Study[];
+  interests: string[];
 }
 
-const Home:React.FC = () => {
-    const {t} = useTranslation();
+const Home: React.FC = () => {
+  const { t } = useTranslation();
+  const isDarkMode = useIsDarkMode();
 
-    // LOAD TECH STACK DATA
-    const [techStack, setTechStack] = useState<TechStackData | null>(null);
-    useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const response = await fetch("./JSON/techStack.json");
-                if (!response.ok) {
-                    console.error("Error HTTP:", response.status);
-                    return null;
-                }
-
-                const data: TechStackResponse = await response.json();
-                return data.techStack;
-            } catch (err) {
-                console.error(err);
-                return null;
-            }
-        };
-
-        fetchData().then((stack) => {
-            if (stack) setTechStack(stack);
-        });
-    }, []);
-
-    // LOAD INTEREST-STUDIES DATA
-    const [interestStudies, setInterestStudies] = useState<InterestStudiesData | null>(null);
-    useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const response = await fetch("./JSON/interest-studies.json");
-                if(!response.ok) {
-                    console.error("Error HTTP:", response.status);
-                    return null;
-                }
-
-                const data: InterestStudiesData = await response.json();
-                return data;
-
-            } catch (err){
-                console.error(err);
-                return null;
-            }
+  // LOAD TECH STACK DATA
+  const [techStack, setTechStack] = useState<TechStackData | null>(null);
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch("./JSON/techStack.json");
+        if (!response.ok) {
+          console.error("Error HTTP:", response.status);
+          return null;
         }
-        fetchData().then((data => {
-            if(data) setInterestStudies(data);
-        }));
-    }, [])
 
-    const homePhrases: string[] = [
-        t("home-phrase-0"),
-        t("home-phrase-1"),
-        t("home-phrase-2"),
-        t("home-phrase-3"),
-        t("home-phrase-4"),
-        t("home-phrase-5"),
-        t("home-phrase-6"),
-        t("home-phrase-7")
-    ];
+        const data: TechStackResponse = await response.json();
+        return data.techStack;
+      } catch (err) {
+        console.error(err);
+        return null;
+      }
+    };
 
-    return (
-        <main className="
+    fetchData().then((stack) => {
+      if (stack) setTechStack(stack);
+    });
+  }, []);
+
+  // LOAD INTEREST-STUDIES DATA
+  const [interestStudies, setInterestStudies] =
+    useState<InterestStudiesData | null>(null);
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch("./JSON/interest-studies.json");
+        if (!response.ok) {
+          console.error("Error HTTP:", response.status);
+          return null;
+        }
+
+        const data: InterestStudiesData = await response.json();
+        return data;
+      } catch (err) {
+        console.error(err);
+        return null;
+      }
+    };
+    fetchData().then((data) => {
+      if (data) setInterestStudies(data);
+    });
+  }, []);
+
+  const homePhrases: string[] = [
+    t("home-phrase-0"),
+    t("home-phrase-1"),
+    t("home-phrase-2"),
+    t("home-phrase-3"),
+    t("home-phrase-4"),
+    t("home-phrase-5"),
+    t("home-phrase-6"),
+    t("home-phrase-7"),
+  ];
+
+  const [isHoveredFavicon, setIsHoveredFavicon] = useState(false);
+
+  return (
+    <main
+      className="
             flex flex-col
             p-10
             z-10
             "
-        >
-            {/*FIRSTS SECTION -- WELCOME*/}
-            <section className="flex flex-col">
-                <TextH1
-                    className={" mb-2 text-center"}
-                >
-                    {t("home-welcome-text")}
-                </TextH1>
+    >
+      {/*FIRSTS SECTION -- WELCOME*/}
+      <section className="flex flex-col">
+        <TextH1 className={" mb-2 text-center"}>
+          {t("home-welcome-text")}
+        </TextH1>
 
-                <TypeWriter
-                    loop={true}
-                    text={homePhrases}
-                />
+        <TypeWriter loop={true} text={homePhrases} />
 
-                <div className="flex flex-col justify-start items-center p-5">
-                    <div className="w-full max-w-[164px] h-auto mb-5">
-                        <img className={"w-full h-auto object-cover rounded-full shadow-lg shadow-green-200 dark:shadow-purple-950 "} src={"./favicon.svg"} alt="favicon" />
-                    </div>
-                    <TextP className={"w-full lg:max-w-1/2 text-center p-5"}>{t("home-personal-phrase")}</TextP>
+        <div className="flex flex-col justify-start items-center p-5">
+          <div
+            className="relative w-full max-w-[164px] h-auto mb-5 rounded-full overflow-hidden"
+            onMouseEnter={() => setIsHoveredFavicon(true)}
+            onMouseLeave={() => setIsHoveredFavicon(false)}
+          >
+            <img
+              src="./favicon.svg"
+              alt="favicon"
+              className="w-full h-auto object-cover rounded-full shadow-lg shadow-green-200 dark:shadow-purple-950"
+              loading="eager"
+            />
+
+            <img
+              src="./favicon.gif"
+              alt="favicon hover"
+              className={`absolute top-0 left-0 w-full h-full object-cover rounded-full shadow-lg shadow-green-200 dark:shadow-purple-950 transition-all duration-500  ${isHoveredFavicon ? "opacity-100" : "opacity-0"}`}
+              loading="lazy"
+            />
+          </div>
+          <TextP className={"w-full lg:max-w-1/2 text-center p-5"}>
+            {t("home-personal-phrase")}
+          </TextP>
+        </div>
+      </section>
+
+      {/*ABOUT ME*/}
+      <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mx-auto w-full lg:max-w-7xl lg:px-4 mb-10">
+        <Card>
+          <TextH2 className={"tracking-widest p-2 mb-4"}>
+            {t("home-about-me")}
+          </TextH2>
+          <TextP className={"p-2"}>{t("home-about-me-content")}</TextP>
+        </Card>
+
+        <Card>
+          <TextH2 className={"tracking-widest p-2 mb-4"}>
+            {t("home-interests")}
+          </TextH2>
+          <ul>
+            {interestStudies != null &&
+              interestStudies.interests.map((content, index) => (
+                <li key={index}>
+                  <TextP className={"p-2"} key={index}>
+                    {t(content)}
+                  </TextP>
+                </li>
+              ))}
+          </ul>
+        </Card>
+
+        <Card className="gap-10">
+          <figcaption className={"flex justify-center"}>
+            <img
+              className="w-full max-w-5xl lg:scale-120 rounded-xl"
+              src={
+                isDarkMode
+                  ? "https://github-stats-alpha.vercel.app/api?username=h3rhex&cc=0d1117&tc=ffffff&ic=8c11b3&bc=0d1117"
+                  : "https://github-stats-alpha.vercel.app/api?username=h3rhex&cc=dfdfdf&tc=000000&ic=8c11b3&bc=dfdfdf"
+              }
+              alt="github-stats"
+              loading={"eager"}
+            />
+          </figcaption>
+
+          <figcaption className={"flex justify-center"}>
+            <img
+              className="w-full max-w-5xl lg:scale-120 rounded-xl border-0"
+              src={
+                isDarkMode
+                  ? "https://streak-stats.demolab.com/?user=h3rhex&theme=dark&background=0d1117&ring=a132c4&fire=ab63ea&currStreakLabel=ffffff&hide_border=true"
+                  : "https://streak-stats.demolab.com/?user=h3rhex&theme=light&background=dfdfdf&ring=a132c4&fire=ab63ea&currStreakLabel=a600b0&hide_border=true%27"
+              }
+              alt="github-stats"
+              loading={"eager"}
+            />
+          </figcaption>
+        </Card>
+      </section>
+
+      {/*TECH STACK*/}
+      <section className="flex flex-col lg:p-5">
+        <header>
+          <TextH2 className={"tracking-widest"}>
+            {t("home-technologies-section-title")}
+          </TextH2>
+        </header>
+
+        <Splitter />
+
+        {/** LANGUAGES **/}
+        <article>
+          <TextH3>{t("home-technologies-langs-scripts")}</TextH3>
+
+          <div className="flex flex-col xl:flex-row flex-wrap gap-2 p-5 mx-auto max-w-7xl">
+            {techStack != null &&
+              techStack.lang_stack.map((item, i) => (
+                <div key={i}>
+                  <TechStackImg src={item.badge_url} alt={item.name} />
                 </div>
-            </section>
+              ))}
+          </div>
+        </article>
 
+        {/*FRAMEWOKS*/}
+        <article>
+          <TextH3>{t("home-technologies-frameworks-title")}</TextH3>
 
-            {/*ABOUT ME*/}
-            <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mx-auto w-full lg:max-w-7xl lg:px-4 mb-10">
-                <Card>
-                    <TextH2 className={"tracking-widest p-2 mb-4"}>
-                        {t("home-about-me")}
-                    </TextH2>
-                    <TextP className={"p-2"}>
-                        {t("home-about-me-content")}
-                    </TextP>
-                </Card>
+          <div
+            className="flex flex-col flex-wrap gap-2 p-5 mx-auto mb-2 max-w-7xl"
+            aria-labelledby="frontend"
+          >
+            <TextH4 className={"mb-2"}>Frontend:</TextH4>
+            <ul className="flex flex-col xl:flex-row flex-wrap gap-2 mb-2">
+              {techStack != null &&
+                techStack.framework_stack.frontend.map((item) => (
+                  <li key={item.name}>
+                    <TechStackImg src={item.badge_url} alt={item.name} />
+                  </li>
+                ))}
+            </ul>
 
-                <Card>
-                    <TextH2 className={"tracking-widest p-2 mb-4"}>
-                        {t("home-interests")}
-                    </TextH2>
-                    <ul>
-                        {interestStudies != null && interestStudies.interests.map((content, index) => (
-                            <li key={index}>
-                                <TextP
-                                    className={"p-2"}
-                                    key={index}
-                                >
-                                    {t(content)}
-                                </TextP>
-                            </li>
-                        ))}
-                    </ul>
-                </Card
-                 >
+            <TextH4 className={"mb-2"}>Backend:</TextH4>
+            <ul className="flex flex-col xl:flex-row flex-wrap gap-2 mb-2">
+              {techStack != null &&
+                techStack.framework_stack.backend.map((item) => (
+                  <li key={item.name}>
+                    <TechStackImg src={item.badge_url} alt={item.name} />
+                  </li>
+                ))}
+            </ul>
+          </div>
+        </article>
 
-                <Card
-                >
-                    <figcaption className={"flex justify-center"}>
-                        <img
-                            className="w-full h-auto max-w-[90%]"
-                            src="https://github-readme-stats.vercel.app/api?username=h3rhex&title_color=ffffff&text_color=ffffff&bg_color=0d1117&border_color=9400D3&icon_color=ff005c"
-                            alt="github-stats"
-                            loading={"eager"}
+        <article>
+          <TextH3>{t("home-technologies-tools_platforms-title")}</TextH3>
 
-                        />
-                    </figcaption>
-
-                    <figcaption className={"flex justify-center"}>
-                        <img
-                            className="w-full h-auto max-w-[90%]"
-                            src="https://github-readme-stats.vercel.app/api/top-langs/?username=h3rhex&layout=compact&langs_count=10&title_color=ffffff&text_color=ffffff&bg_color=0d1117&border_color=9400D3&icon_color=ff005c"
-                            alt="github-stats"
-                            loading={"eager"}
-                        />
-                    </figcaption>
-
-                </Card>
-            </section>
-
-            {/*TECH STACK*/}
-            <section className="flex flex-col lg:p-5">
-                <header>
-                    <TextH2
-                        className={"tracking-widest"}
-                    >
-                        {t("home-technologies-section-title")}
-                    </TextH2>
-                </header>
-
-                <Splitter />
-
-                {/** LANGUAGES **/}
-                <article>
-                    <TextH3>
-                        {t("home-technologies-langs-scripts")}
-                    </TextH3>
-
-                    <div className="flex flex-col xl:flex-row flex-wrap gap-2 p-5 mx-auto max-w-7xl">
-                        {techStack != null && techStack.lang_stack.map((item, i) => (
-                            <div key={i}>
-                                <TechStackImg src={item.badge_url} alt={item.name} />
-                            </div>
-                        ))}
-                    </div>
-                </article>
-
-                {/*FRAMEWOKS*/}
-                <article>
-                    <TextH3>
-                        {t("home-technologies-frameworks-title")}
-                    </TextH3>
-
-                    <div className="flex flex-col flex-wrap gap-2 p-5 mx-auto mb-2 max-w-7xl" aria-labelledby="frontend">
-                        <TextH4 className={"mb-2"}>
-                                Frontend:
-                        </TextH4>
-                        <ul className="flex flex-col xl:flex-row flex-wrap gap-2 mb-2">
-                            {techStack != null && techStack.framework_stack.frontend.map((item) => (
-                                <li key={item.name}>
-                                    <TechStackImg src={item.badge_url} alt={item.name} />
-                                </li>
-                            ))}
-                        </ul>
-
-                        <TextH4 className={"mb-2"}>
-                                Backend:
-                        </TextH4>
-                        <ul className="flex flex-col xl:flex-row flex-wrap gap-2 mb-2">
-                            {techStack != null && techStack.framework_stack.backend.map((item) => (
-                                <li key={item.name}>
-                                    <TechStackImg src={item.badge_url} alt={item.name} />
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-                </article>
-
-                <article>
-                    <TextH3>
-                        {t("home-technologies-tools_platforms-title")}
-                    </TextH3>
-
-                    <div className="flex flex-col xl:flex-row flex-wrap gap-2 p-5 mx-auto max-w-7xl">
-                        {techStack != null && techStack.tools_platforms_stack.map((item, i) => (
-                            <div key={i}>
-                                <TechStackImg src={item.badge_url} alt={item.name} />
-                            </div>
-                        ))}
-                    </div>
-                </article>
-            </section>
-
-            <section className={"flex flex-col p-5"}>
-                <TextH2
-                    className={"tracking-widest"}
-                >
-                    {t("home-studies-title")}
-                </TextH2>
-                <Splitter />
-                <div className={"flex flex-col gap-2"}>
-                    {interestStudies != null && interestStudies.studies.map((study, i) => (
-                        <div className={"flex flex-col gap-2 p-2"} key={i}>
-                            <TextH3>{t(study.title)}</TextH3>
-                            <TextP>{t(study.description)}</TextP>
-                        </div>
-                    ))}
+          <div className="flex flex-col xl:flex-row flex-wrap gap-2 p-5 mx-auto max-w-7xl">
+            {techStack != null &&
+              techStack.tools_platforms_stack.map((item, i) => (
+                <div key={i}>
+                  <TechStackImg src={item.badge_url} alt={item.name} />
                 </div>
-            </section>
-        </main>
-    );
-}
+              ))}
+          </div>
+        </article>
+      </section>
+
+      <section className={"flex flex-col p-5"}>
+        <TextH2 className={"tracking-widest"}>{t("home-studies-title")}</TextH2>
+        <Splitter />
+        <div className={"flex flex-col gap-2"}>
+          {interestStudies != null &&
+            interestStudies.studies.map((study, i) => (
+              <div className={"flex flex-col gap-2 p-2"} key={i}>
+                <TextH3>{t(study.title)}</TextH3>
+                <TextP>{t(study.description)}</TextP>
+              </div>
+            ))}
+        </div>
+      </section>
+    </main>
+  );
+};
 
 export default Home;

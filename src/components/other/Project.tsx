@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "../common/Card.tsx";
-import TextH3 from "../common/text/TextH3.tsx";
+import TextH2 from "../common/text/TextH2.tsx";
 import TextP from "../common/text/TextP.tsx";
 import ProjectTag from "./Project-Tag.tsx";
 
@@ -18,7 +18,6 @@ const Project: React.FC<ProjectData> = ({
   description,
   github,
   website,
-  image,
   tags,
 }) => {
   return (
@@ -26,21 +25,10 @@ const Project: React.FC<ProjectData> = ({
       aria-label={`Proyecto: ${title}`}
       className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg overflow-hidden"
     >
-      {image && (
-        <figure className="relative w-full max-w-3/4 aspect-[9/9] overflow-hidden flex items-center justify-center rounded-lg mb-4 bg-black/10">
-          <img
-            src={image}
-            alt={title}
-            className="w-full h-full object-fill"
-            loading={"lazy"}
-          />
-        </figure>
-      )}
-
       <header>
-        <TextH3 className="text-center text-base sm:text-lg md:text-xl font-semibold mb-2">
+        <TextH2 className="text-center text-base sm:text-lg md:text-xl font-semibold mb-2">
           {title}
-        </TextH3>
+        </TextH2>
       </header>
 
       <TextP className="text-center text-xs sm:text-sm md:text-base text-gray-700 dark:text-gray-300 mb-3">
