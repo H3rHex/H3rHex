@@ -3,7 +3,6 @@
     {
       "title": "Image Ascier",
       "description": "image-ascier-description",
-      "image": "./ProjectAssets/ImageAscier-Icon.webp",
       "github": "https://github.com/H3rHex/ImageAscier",
       "tags": [
         "cpp",
@@ -13,7 +12,6 @@
     {
       "title": "MiniShell C++",
       "description": "mini-shell-description",
-      "image": "./ProjectAssets/MiniShell-Icon.webp",
       "github": "https://github.com/H3rHex/MiniShell-in-Cpp",
       "tags": [
         "cpp",
@@ -24,7 +22,6 @@
     {
       "title": "Next Step CV",
       "description": "next-step-cv-description",
-      "image": "./ProjectAssets/NextStepCv-Icon.webp",
       "github": "https://github.com/H3rHex/Next-Step-CV",
       "tags": [
         "react",
@@ -37,7 +34,6 @@
     {
       "title": "Z-Hold",
       "description": "z-hold-decription",
-      "image": "./ProjectAssets/Z-Hold.icon.png",
       "github": "https://github.com/H3rHex/Z-Hold",
       "website": "https://h3rhex.github.io/Z-Hold/",
       "tags": [
