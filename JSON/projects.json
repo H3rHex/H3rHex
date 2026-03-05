@@ -33,12 +33,25 @@
     },
     {
       "title": "Z-Hold",
-      "description": "z-hold-decription",
+      "description": "z-hold-description",
       "github": "https://github.com/H3rHex/Z-Hold",
       "website": "https://h3rhex.github.io/Z-Hold/",
       "tags": [
         "godot",
         "game-dev"
+      ]
+    },
+    {
+      "title": "DAW-WebProject-1",
+      "description": "dw-p-1-description",
+      "github": "https://github.com/alejandro-study-h3rhex/DAW-WebProject-1/",
+      "website": "https://alejandro-study-h3rhex.github.io/DAW-WebProject-1/",
+      "tags": [
+        "web",
+        "spa",
+        "JQuery",
+        "AJAX",
+        "daw-project"
       ]
     }
   ]
