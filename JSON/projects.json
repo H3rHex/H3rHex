@@ -20,38 +20,13 @@
       ]
     },
     {
-      "title": "Next Step CV",
-      "description": "next-step-cv-description",
-      "github": "https://github.com/H3rHex/Next-Step-CV",
-      "tags": [
-        "react",
-        "python",
-        "flask",
-        "typescript",
-        "tailwindcss"
-      ]
-    },
-    {
       "title": "Z-Hold",
-      "description": "z-hold-description",
+      "description": "z-hold-decription",
       "github": "https://github.com/H3rHex/Z-Hold",
       "website": "https://h3rhex.github.io/Z-Hold/",
       "tags": [
         "godot",
         "game-dev"
-      ]
-    },
-    {
-      "title": "DAW-WebProject-1",
-      "description": "dw-p-1-description",
-      "github": "https://github.com/alejandro-study-h3rhex/DAW-WebProject-1/",
-      "website": "https://alejandro-study-h3rhex.github.io/DAW-WebProject-1/",
-      "tags": [
-        "web",
-        "spa",
-        "JQuery",
-        "AJAX",
-        "daw-project"
       ]
     }
   ]
