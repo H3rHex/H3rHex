@@ -20,18 +20,6 @@
       ]
     },
     {
-      "title": "Next Step CV",
-      "description": "next-step-cv-description",
-      "github": "https://github.com/H3rHex/Next-Step-CV",
-      "tags": [
-        "react",
-        "python",
-        "flask",
-        "typescript",
-        "tailwindcss"
-      ]
-    },
-    {
       "title": "Z-Hold",
       "description": "z-hold-decription",
       "github": "https://github.com/H3rHex/Z-Hold",

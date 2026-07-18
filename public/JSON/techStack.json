@@ -10,10 +10,6 @@
         "badge_url": "https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white"
       },
       {
-        "name": "C",
-        "badge_url": "https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white"
-      },
-      {
         "name": "Java",
         "badge_url": "https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white"
       },
@@ -39,12 +35,8 @@
       ],
       "backend": [
         {
-          "name": "Flask",
-          "badge_url": "https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white"
-        },
-        {
-          "name": "Spring Boot",
-          "badge_url": "https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white"
+          "name": "FastApi",
+          "badge_url": "https://img.shields.io/badge/FastAPI-%23009688.svg?style=for-the-badge&logo=FastAPI&logoColor=white"
         }
       ]
     },
@@ -60,7 +52,12 @@
       {
         "name": "npm",
         "badge_url": "https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white"
+      },
+      {
+        "name": "Docker",
+        "badge_url": "https://img.shields.io/badge/docker-%232496ED.svg?style=for-the-badge&logo=docker&logoColor=white"
       }
+      
     ]
   }
 }
